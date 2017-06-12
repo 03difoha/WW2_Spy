@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8>
+	<title>Top Secret</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="video-canvas.css"/>
+    <link rel="icon" type="image/png" sizes="120x120"  href="media/icon.png">
+</head>
+<body>
+    <div id="instructions">
+        <p>OPERATION CALIGO<br><br>
+            British intelligence has warned us that the German military is developing various new technologies that threaten the freedom of allied forces.  Using the documents we have provided you, pose as a Nazi officer to gain access to restricted areas. and collect photographic evidence of military prototypes that MI5 has heard rumours of. The following list is based on intelligence gathered on the continent and Nazi technology salvaged from bomb sites<br><br>Use the spacebar to take a photograph.<br><br>you have 10 shots to get the evidence outlined below. 
+        <ul>
+            <li><bold class="tick" id="tanktick">✓</bold> Unidentified tank design, reported in africa.</li>
+            <br>
+            <li><bold class="tick" id="schtick">✓</bold> reports of huge artillery unit advancing east.</li>
+            <br>
+            <li><bold class="tick" id="hotick">✓</bold> Propellerless winged vehicle.</li>
+            <br>
+            <li><bold class="tick" id="v2tick">✓</bold> self-propelled projectile.</li>
+            <br>
+            <li><bold class="tick" id="hittick">✓</bold> Bonus - Closeup picture of the Führer himself. </li>
+        </ul><br><br><small>A video experiment created by Harry Difolco, Jack Kemmish and Sanj Pardesi</small>
+        </p>
+    </div>
+    <div class="center1">
+        <img id="cam" src="media/camBG.png"></div>
+        <div class="center">
+            <video id="video" autoplay>
+		    <source id="vidSrc" src="media/final_render.mp4" type="video/mp4">
+	        </video>
+        </div>
+    <div class="center1">
+    <img id="reticle" src="media/reticle.png"></div>
+    <div id="info">
+        <p>MISSION LOG</p>
+        <p id='wrong'>That's not the picture we're looking for...</p>
+        
+         <p id="panzer">PANZER III<br><br>The Panzer III was intended to be the main medium core of the German armored force when it was designed during the inter-war period. While it was originally designed to fight other tanks, its 37 mm and later 50 mm guns could not keep pace with Soviet T-34 and KV tanks, which respectively, either had sloped armor or relatively thick armor and both shared 76 mm guns. <br><br>By 1941, the Panzer III was the most numerous of German tank designs, however, during the later parts of 1943, it was largely replaced by later versions of the Panzer IV and Panzer V "Panther". Its assault gun chassis variant, the Sturmgeschütz III was, with just over 9,400 units built, the most widely produced German armored fighting vehicle of World War II.<br><br><a href="https://en.wikipedia.org/wiki/Panzer_III">Wikipedia</a></p>
+
+         <p id="schwerer">SCHWERER GUSTAV<br><br>
+         Schwerer Gustav (English: Heavy Gustaf) was the name of a German 80 cm (31.5 in.) railway gun. It was developed in the late 1930s by Krupp as siege artillery for the explicit purpose of destroying the main forts of the French Maginot Line, the strongest fortifications then in existence. <br><br>The fully assembled gun weighed nearly 1,350 tonnes, and could fire shells weighing seven tonnes to a range of 47 kilometres (29 mi).[1] The gun was designed in preparation for the Battle of France, but was not ready for action when the battle began, and in any case the Wehrmacht's Blitzkrieg offensive through Belgium rapidly outflanked and isolated the Maginot Line's static defenses, eventually forcing the French to surrender and making their destruction unnecessary. <br><br>Gustav was later employed in the Soviet Union at the siege of Sevastopol during Operation Barbarossa, where among other things, it destroyed a munitions depot buried in the bedrock under a bay. The gun was moved to Leningrad, and may have been intended to be used in the Warsaw Uprising like other German heavy siege pieces, but the rebellion was crushed before it could be prepared to fire. Gustav was destroyed by the Germans near the end of the war in 1945 to avoid capture by the Red Army.<br><br>It was the largest-calibre rifled weapon ever used in combat, the heaviest mobile artillery piece ever built in terms of overall weight, and fired the heaviest shells of any artillery piece.[2][3] It is only surpassed in calibre by the unused British Mallet's Mortar and the American Little David bomb-testing mortar (both 36 inch; 914 mm).[4]<br><br>Source: <a href="https://en.wikipedia.org/wiki/Schwerer_Gustav">Wikipedia</a>
+         </p>
+        
+         <p id="ho">HORTEN HO 229<br><br>The Horten H.IX, RLM designation Ho 229 (or Gotha Go 229 for extensive re-design work done by Gotha to prepare the aircraft for mass production) was a German prototype fighter/bomber initially designed by Reimar and Walter Horten to be built by Gothaer Waggonfabrik late in World War II. It was the first flying wing to be powered by jet engines.<br><br>
+         The design was a response to Hermann Göring's call for light bomber designs capable of meeting the "3×1000" requirement; namely to carry 1,000 kilograms (2,200 lb) of bombs a distance of 1,000 kilometres (620 mi) with a speed of 1,000 kilometres per hour (620 mph). Only jets could provide the speed, but these were extremely fuel-hungry, so considerable effort had to be made to meet the range requirement. Based on a flying wing, the Ho 229 lacked all extraneous control surfaces to lower drag. It was the only design to come even close to the 3×1000 requirements and received Göring's approval. Its ceiling was 15,000 metres (49,000 ft).</p>
+        
+         <p id="hitler">HITLER<br><br>Hitler ruled the NSDAP autocratically by asserting the Führerprinzip (leader principle). The principle relied on absolute obedience of all subordinates to their superiors; thus he viewed the government structure as a pyramid, with himself—the infallible leader—at the apex. Rank in the party was not determined by elections—positions were filled through appointment by those of higher rank, who demanded unquestioning obedience to the will of the leader. <br><br> Hitler's leadership style was to give contradictory orders to his subordinates and to place them into positions where their duties and responsibilities overlapped with those of others, to have "the stronger one [do] the job".[343] In this way, Hitler fostered distrust, competition, and infighting among his subordinates to consolidate and maximise his own power. His cabinet never met after 1938, and he discouraged his ministers from meeting independently.[344][345] Hitler typically did not give written orders; instead he communicated verbally, or had them conveyed through his close associate, Martin Bormann.[346] He entrusted Bormann with his paperwork, appointments, and personal finances; Bormann used his position to control the flow of information and access to Hitler.</p>
+        
+         <p id="v2">V2 ROCKET<br><br>The V-2 (German: Vergeltungswaffe 2, "Retribution Weapon 2"), technical name Aggregat 4 (A4), was the world's first long-range[4] guided ballistic missile. The missile with a liquid-propellant rocket engine was developed during the Second World War in Germany as a "vengeance weapon", assigned to attack Allied cities as retaliation for the Allied bombings against German cities. The V-2 rocket also became the first artificial object to cross the boundary of space with the vertical launch of MW 18014 on 20 June 1944.[5]<br><br>Research into military use of long range rockets began when the studies of graduate student Wernher von Braun attracted the attention of the German Army. A series of prototypes culminated in the A-4, which went to war as the V-2. Beginning in September 1944, over 3,000 V-2s were launched by the German Wehrmacht against Allied targets during the war, first London and later Antwerp and Liège. According to a 2011 BBC documentary,[6] the attacks from V2s resulted in the deaths of an estimated 9,000 civilians and military personnel, and a further 12,000 forced laborers and concentration camp prisoners died as a result of their forced participation in the production of the weapons. <br><br> Source: <a href="https://en.wikipedia.org/wiki/V-2_rocket"> Wikipedia</a></p>
+    </div>
+    <div id="container">
+        <canvas id="seed" class="canvas"></canvas>
+    </div>
+	<audio id="audio" src="media/camera.mp3"></audio>
+	<script src="snapshot.js"></script>
+</body>
+</html>

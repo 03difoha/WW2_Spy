@@ -1,0 +1,147 @@
+@font-face{
+  font-family: 'atwriter';
+  src: url('atwriter.ttf');
+}
+
+body{
+    background-image: url(media/BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#container{
+    margin-top: 23em;
+    background-image: url(media/desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:246px;
+}
+
+video{
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5%;
+    position: absolute;
+    z-index: 999999;
+    right: 29%;
+    top: 4.5%;
+    width: 40%;
+    border-radius: 10px;
+}
+
+#instructions{
+    width:25%;
+    background-color: rgba(238, 214, 174, 0.6);
+    float:left;
+    font-family: 'atwriter', sans-serif;
+    margin: 1em;
+    overflow: scroll;
+    height:371px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+#info{
+    width:25%;
+    background-color: rgba(238, 214, 174, 0.6);
+    float:right;
+    font-family: 'atwriter', sans-serif;
+    margin-top:-1em;
+    overflow: scroll;
+    height:371px;
+}
+
+p{
+    padding: 10px;
+    padding-top: 0;
+    opacity: 1;
+    margin-top:10px;
+}
+
+canvas{
+    width: 12%;
+    height: 33%;
+    margin: 10px;
+    border-radius: 2px;
+    margin-right: 69px;
+}
+
+#seed{
+    margin-right: 69px;
+}
+
+button{
+	margin-top:10px;
+}
+
+footer{ 
+	font-size:11px;
+	color:#aaa; 
+	margin-top:10px;
+}
+
+a{ 
+	color:#aaa;
+	text-decoration:none;
+}
+
+.center{
+    text-align: center;
+    width:40%;
+    display: inline-block;
+}
+
+.center1{
+    text-align: center;
+    width:40%;
+    display: inline-block;
+}
+
+img{
+    position: absolute;
+    z-index: 999999;
+    right: 29%;
+    top: 3.5%;
+    width: 41%;
+    border-radius: 10px;
+}
+
+#cam{
+    position: absolute;
+    z-index: -1;
+    right: 29%;
+    top: 3.5%;
+    width: 41%;
+    border-radius: 10px;
+}
+
+#schwerer, #panzer, #hitler, #v2, #ho, #wrong {
+    display: none;
+}
+
+small{
+    position: relative;
+    left:10px;
+}
+
+ul{
+    list-style: none;
+}
+
+.tick{
+    font-size: 30px;
+    display:none;
+}
+
